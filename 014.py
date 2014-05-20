@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 import sys,re
 pat=re.compile('@[a-z,_]* ')
 for line in sys.stdin:

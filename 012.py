@@ -1,6 +1,6 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 import sys,re
-pat=re.compile('�Ȃ�$')
+pat=re.compile('なう$')
 for line in sys.stdin:
-    if pat.match(line):
+    if pat.search(line):
         print line

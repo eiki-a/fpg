@@ -1,6 +1,6 @@
-# -*- coding: utf-8 -*-
+ï»¿# -*- coding: utf-8 -*-
 import sys,re
-pat=re.compile('@[\w]* ') # @(•¶šA”šAQ)i‹ó”’j
+pat=re.compile('@[\w]* ') # @(æ–‡å­—ã€æ•°å­—ã€ï¼¿)ï¼ˆç©ºç™½ï¼‰
 for line in sys.stdin:
     if pat.match(line):
         usrname=pat.search(line).group()

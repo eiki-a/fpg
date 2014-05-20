@@ -1,6 +1,6 @@
-# -*- coding: utf-8 -*-
-import sys,re # ‚¢‚¸‚ê‚à zcat tweets.txt.gz | python 01X.py‚Å“®ì
-pat=re.compile('ŠgUŠó–]')
+ï»¿# -*- coding: utf-8 -*-
+import sys,re # ã„ãšã‚Œã‚‚ zcat tweets.txt.gz | python 01X.pyã§å‹•ä½œ
+pattern=u'æ‹¡æ•£å¸Œæœ›'
 for line in sys.stdin:
-    if pat.search(line):
+    if re.search(pattern, line.decode('utf-8')):
         print line
